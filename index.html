@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda en Línea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda en Línea</h1>
+    </header>
+    <main>
+        <div class="productos">
+            <!-- Cada producto tendrá esta estructura -->
+            <div class="producto" data-id="1" data-precio="100">
+                <img src="assets/img/producto1.jpg" alt="Producto 1">
+                <h2>Producto 1</h2>
+                <p>Descripción breve del producto.</p>
+                <p><strong>$100</strong></p>
+                <button class="btn-agregar">Añadir al carrito</button>
+            </div>
+            <div class="producto" data-id="2" data-precio="200">
+                <img src="assets/img/producto2.jpg" alt="Producto 2">
+                <h2>Producto 2</h2>
+                <p>Descripción breve del producto.</p>
+                <p><strong>$200</strong></p>
+                <button class="btn-agregar">Añadir al carrito</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
