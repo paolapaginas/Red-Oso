@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda en Línea</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              backgroundImage: {
+                'fondo': "url('/assets/fondo-vegas.webp')",
+                'jorge': "url('/assets/martin.jpeg')",
+                'luis': "url('/assets/luis.webp')",
+                'video': "url('/assets/portada-video.webp')",
+                'fondoaprenderas':"url('/assets/fondo-aprenderas.svg')"
+              },
+              fontFamily:{
+                montserrat: ['Montserrat', 'sans-serif'],
+                cocomatBold: ['cocomatbold', 'sans-serif'],
+                cocomatBlack: ['cocomatblack', 'sans-serif'],
+                bebas: ['bebas', 'sans-serif']
+              },
+              animation: {
+                'infinite-scroll': 'infinite-scroll 25s linear infinite',
+              },
+              keyframes: {
+                'infinite-scroll': {
+                  from: { transform: 'translateX(0)' },
+                  to: { transform: 'translateX(-100%)' },
+                  }
+              },
+            "tailwindCSS.includeLanguages": {
+              "html": "html",
+              "javascript": "javascript",
+              "css": "css"
+              },
+              "editor.quickSuggestions": {
+              "strings": true
+              }
+          },
+          
+              
+        }}
+      </script>
+    <title>Casino GyC</title>
+    <link rel="shortcut icon" href="/Assets/logo-vegas.webp" type="image/x-icon">
 </head>
-<body>
-    <header>
-        <h1>Mi Tienda en Línea</h1>
-    </header>
-    <main>
-        <div class="productos">
-            <!-- Cada producto tendrá esta estructura -->
-            <div class="producto" data-id="1" data-precio="100">
-                <img src="assets/img/producto1.jpg" alt="Producto 1">
-                <h2>Producto 1</h2>
-                <p>Descripción breve del producto.</p>
-                <p><strong>$100</strong></p>
-                <button class="btn-agregar">Añadir al carrito</button>
-            </div>
-            <div class="producto" data-id="2" data-precio="200">
-                <img src="assets/img/producto2.jpg" alt="Producto 2">
-                <h2>Producto 2</h2>
-                <p>Descripción breve del producto.</p>
-                <p><strong>$200</strong></p>
-                <button class="btn-agregar">Añadir al carrito</button>
-            </div>
+<body class="bg-fondo bg-cover bg-center flex justify-center items-center h-screen w-screen">
+    <div class="flex flex-col justify-center items-center text-white max-w-[400px] p-2 gap-10 text-xl text-center">
+        <img class="w-[200px]" src="/Assets/logo-vegas.webp" alt="Logo Casino Vegas 365">
+        <p class=" text-3xl "> 𝐄𝐍𝐕Ì𝐀𝐍𝐎𝐒 𝐔𝐍 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 <br>  </p>
+        <div class="flex flex-col justify-center items-center slef-center gap-2">
+            <a target="_blank" href="WSPP AQUI"><button class="boton border-[#4700cc] border-[2px] p-4 rounded-xl bg-black font-bold justify-around gap-3 flex text-xl font-bebas   self-center">CREAR MI USUARIO <img class="w-8" src="/Assets/whatsapp-vegas.webp" alt=""></button></a>
+            <p>Mínimo de carga $1000</p>
         </div>
-    </main>
-    <footer>
-        <button id="finalizar-compra">Finalizar Compra</button>
-    </footer>
-    <script src="script.js"></script>
+        <h1 class="font-semibold text-2xl">💰 PROMOS ACTIVAS 💰</h1>
+        <h2 class="font-semibold text-2xl">LAS MEJORES RULETAS DE +6000 SLOTS Y MÁS</h2>
+<p>PAGOS 24/7 SIN LIMITES DE RETIRO</p>
+    </div>
+    
 </body>
 </html>
